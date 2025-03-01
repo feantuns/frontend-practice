@@ -1,4 +1,6 @@
-# Ableton
+# [Ableton](https://www.frontendpractice.com/projects/ableton)
+
+![](https://www.frontendpractice.com/_next/image?url=%2Ffullsize%2FC1-Ableton.jpg&w=3840&q=90)
 
 Ideia: estabelecer um processo para o desenvolvimento desses projetos.
 
