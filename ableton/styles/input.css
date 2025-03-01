@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Jost";
+  src: url("/assets/fonts/Jost-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@theme {
+  --font-sans: "Jost";
+  --color-primary: #ff764d;
+  --color-secondary: #0000ff;
+  --color-a-yellow: #fbffa7;
+  --color-a-blue: #b1c5ff;
+  --color-a-green: #b6ffc0;
+  --color-a-violet: #d5b3ff;
+}
+
+::selection {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss/index";
+@import "tailwindcss/theme";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";

@@ -1,0 +1,15 @@
+{
+  "name": "ableton",
+  "version": "1.0.0",
+  "description": "Ideia: estabelecer um processo para o desenvolvimento desses projetos.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Antunes",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.4",
+    "tailwindcss": "^4.0.4"
+  }
+}
