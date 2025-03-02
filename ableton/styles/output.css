@@ -400,9 +400,6 @@
 .mt-4 {
   margin-top: calc(var(--spacing) * 4);
 }
-.ml-1 {
-  margin-left: calc(var(--spacing) * 1);
-}
 .ml-3 {
   margin-left: calc(var(--spacing) * 3);
 }
@@ -427,6 +424,15 @@
 .h-\[50vw\] {
   height: 50vw;
 }
+.h-\[60vh\] {
+  height: 60vh;
+}
+.h-\[60vw\] {
+  height: 60vw;
+}
+.h-\[80vw\] {
+  height: 80vw;
+}
 .h-\[85vh\] {
   height: 85vh;
 }
@@ -441,9 +447,6 @@
 }
 .max-h-\[600px\] {
   max-height: 600px;
-}
-.w-2 {
-  width: calc(var(--spacing) * 2);
 }
 .w-\[30vw\] {
   width: 30vw;
@@ -543,23 +546,8 @@
 .bg-\[url\(\'\/assets\/img_5\.webp\'\)\] {
   background-image: url('/assets/img_5.webp');
 }
-.bg-\[url\(\'\/assets\/pexels-anna-pou-8133378\.webp\'\)\] {
-  background-image: url('/assets/pexels-anna-pou-8133378.webp');
-}
-.bg-\[url\(\'\/assets\/pexels-cottonbro-3201724\.webp\'\)\] {
-  background-image: url('/assets/pexels-cottonbro-3201724.webp');
-}
-.bg-\[url\(\'\/assets\/pexels-fauxels-3184357\.webp\'\)\] {
-  background-image: url('/assets/pexels-fauxels-3184357.webp');
-}
-.bg-\[url\(\'\/assets\/pexels-karolina-grabowska-6333744\.webp\'\)\] {
-  background-image: url('/assets/pexels-karolina-grabowska-6333744.webp');
-}
-.bg-\[url\(\'\/assets\/pexels-laker-6156425\.webp\'\)\] {
-  background-image: url('/assets/pexels-laker-6156425.webp');
-}
-.bg-\[url\(\'\/assets\/pexels-minan1398-715816\.webp\'\)\] {
-  background-image: url('/assets/pexels-minan1398-715816.webp');
+.bg-\[url\(\'\/assets\/img_6\.webp\'\)\] {
+  background-image: url('/assets/img_6.webp');
 }
 .bg-cover {
   background-size: cover;

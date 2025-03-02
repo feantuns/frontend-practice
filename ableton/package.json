@@ -1,10 +1,10 @@
 {
   "name": "ableton",
   "version": "1.0.0",
-  "description": "Ideia: estabelecer um processo para o desenvolvimento desses projetos.",
+  "description": "Ableton Frontend Practice Challenge",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
   },
   "author": "Felipe Antunes",
   "license": "ISC",
