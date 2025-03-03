@@ -80,7 +80,7 @@
     </header>
 
     <main class="bg-white">
-      <section class="px-[9vw] h-[85vh] w-full">
+      <section class="px-[9vw] h-[85vh] max-h-[800px] w-full">
         <div
           class="flex items-center justify-center h-full w-full bg-[url('/assets/img_0.webp')] bg-center bg-cover bg-no-repeat"
         >
@@ -185,15 +185,15 @@
       >
         <div class="flex flex-col gap-[9vw]">
           <div
-            class="w-[30vw] h-[26vw] max-h-[300px] bg-[url('/assets/img_3.webp')] bg-right bg-cover bg-no-repeat"
+            class="w-[30vw] h-[26vw] max-w-[400px] max-h-[300px] bg-[url('/assets/img_3.webp')] bg-right bg-cover bg-no-repeat"
           ></div>
 
           <div
-            class="w-[30vw] h-[26vw] max-h-[300px] bg-[url('/assets/img_4.webp')] bg-center bg-cover bg-no-repeat"
+            class="w-[30vw] h-[26vw] max-w-[400px] max-h-[300px] bg-[url('/assets/img_4.webp')] bg-center bg-cover bg-no-repeat"
           ></div>
         </div>
         <div
-          class="w-[43vw] h-[50vw] max-h-[600px] bg-[url('/assets/img_5.webp')] bg-left bg-cover bg-no-repeat"
+          class="w-[40vw] h-[50vw] max-w-[600px] max-h-[650px] bg-[url('/assets/img_5.webp')] bg-left bg-cover bg-no-repeat"
         ></div>
       </section>
 
@@ -218,7 +218,7 @@
 
       <section class="px-[9vw] w-full">
         <div
-          class="w-full h-[50vw] bg-[url('/assets/img_6.webp')] bg-center bg-cover bg-no-repeat"
+          class="w-full h-[50vw] max-h-[800px] bg-[url('/assets/img_6.webp')] bg-center bg-cover bg-no-repeat"
         />
       </section>
 
@@ -244,11 +244,23 @@
           </p>
         </div>
       </section>
+
+      <section class="px-[18vw] w-full">
+        <div
+          class="w-full flex items-center justify-between py-[8vw] bg-a-violet"
+        >
+          <div
+            class="w-[32vw] h-[27vw] ml-[-9vw] max-w-[600px] max-h-[450px] bg-[url('/assets/img_7.jpg')] bg-center bg-cover bg-no-repeat"
+          ></div>
+          <div
+            class="w-[42vw] h-[40vw] mr-[-18vw] max-w-[900px] max-h-[650px] bg-[url('/assets/img_8.webp')] bg-center bg-cover bg-no-repeat"
+          ></div>
+        </div>
+      </section>
     </main>
   </body>
 
   <script>
-    console.log("teste");
     let lastScrollY = window.scrollY;
     let isScrollingUp = false;
     let lastScrollTime = Date.now();
