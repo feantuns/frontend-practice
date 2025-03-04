@@ -43,3 +43,4 @@ Requisitos:
   - [ ] Body sections
   - [ ] Footer
   - [x] select highlight texto fundo azul
+  - [ ] Converter imagens para webp
