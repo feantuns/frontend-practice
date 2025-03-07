@@ -40,7 +40,7 @@ Requisitos:
   - [ ] Menu more
   - [ ] Menu responsivo
   - [x] Hero
-  - [ ] Body sections
+  - [x] Body sections
   - [ ] Footer
   - [x] select highlight texto fundo azul
   - [ ] Converter imagens para webp
