@@ -304,7 +304,7 @@
         </div>
       </section>
 
-      <footer class="border-t-2 border-t-gray-200 p-[9vw]">
+      <footer class="border-t-2 border-t-gray-200 px-[9vw] py-[8vw]">
         <h3 class="text-5xl font-medium">Ableton</h3>
 
         <div
@@ -355,9 +355,18 @@
               Enter your email address to stay up to date with the latest
               offers, tutorials, downloads, surveys and more.
             </p>
-            <form onsubmit="event.preventDefault()">
-              <input type="email" placeholder="Email Adrress" />
-              <button type="submit">Signup</button>
+            <form onsubmit="event.preventDefault()" class="flex w-full mt-4">
+              <input
+                class="grow-1 bg-gray-200 px-4"
+                type="email"
+                placeholder="Email Address"
+              />
+              <button
+                type="submit"
+                class="bg-secondary text-white px-8 py-2 font-[450]"
+              >
+                Sign up
+              </button>
             </form>
           </div>
         </div>
