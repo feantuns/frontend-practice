@@ -308,8 +308,10 @@
         <h3 class="text-5xl font-medium">Ableton</h3>
 
         <div class="flex flex-wrap gap-6 mt-[4vw] font-light text-[1.2rem]">
-          <div class="grow-1 w-full flex justify-between gap-6">
-            <div>
+          <div
+            class="grow-1 flex-wrap-reverse w-full flex justify-between gap-6"
+          >
+            <div class="basis-[300px] grow-1">
               <ul>
                 <li>
                   <a href="#" class="flex items-center"
@@ -358,7 +360,7 @@
               </ul>
             </div>
 
-            <div>
+            <div class="basis-[300px] grow-1">
               <p class="font-medium mb-1">Education</p>
               <ul>
                 <li>
@@ -382,7 +384,7 @@
               </ul>
             </div>
 
-            <div class="max-w-[450px]">
+            <div class="basis-[450px] grow-1 max-w-[450px]">
               <p class="font-medium mb-1">Sign up to our newsletter</p>
               <p>
                 Enter your email address to stay up to date with the latest
@@ -404,8 +406,8 @@
             </div>
           </div>
 
-          <div class="grow-1 w-full flex gap-6">
-            <div>
+          <div class="grow-1 flex-wrap w-full flex gap-6">
+            <div class="basis-[300px] grow-1">
               <p class="font-medium mb-1">Community</p>
               <ul>
                 <li>
@@ -429,10 +431,13 @@
               </ul>
             </div>
 
-            <div>
+            <div class="basis-[300px] grow-1">
               <p class="font-medium mb-1">Language and Location</p>
-              <div class="flex">
-                <select value="en" class="bg-gray-200 px-4">
+              <div class="flex gap-[2px]">
+                <select
+                  value="en"
+                  class="bg-gray-200 px-3 py-2 text-[0.8rem] rounded-none appearance-none font-medium min-w-[100px]"
+                >
                   <option value="en">English</option>
                   <option value="de">Deutsch</option>
                   <option value="es">Español</option>
@@ -443,7 +448,10 @@
                   <option value="pt">Português</option>
                   <option value="zh">简体中文</option>
                 </select>
-                <select value="us" class="bg-gray-200 px-4">
+                <select
+                  value="us"
+                  class="bg-gray-200 px-3 py-2 rounded-none appearance-none text-[0.8rem] font-medium grow-1"
+                >
                   <option value="us">United States</option>
                   <option value="de">Deutschland</option>
                   <option value="es">España</option>
@@ -457,7 +465,7 @@
               </div>
             </div>
 
-            <div class="max-w-[450px]"></div>
+            <div class="basis-[450px] grow-1 max-w-[450px]"></div>
           </div>
         </div>
       </footer>
