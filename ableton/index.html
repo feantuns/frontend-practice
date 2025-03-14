@@ -305,9 +305,11 @@
       </section>
 
       <footer class="border-t-2 border-t-gray-200 px-[9vw] py-[8vw]">
-        <h3 class="text-5xl font-medium">Ableton</h3>
+        <h3 class="text-6xl font-medium">Ableton</h3>
 
-        <div class="flex flex-wrap gap-6 mt-[4vw] font-light text-[1.2rem]">
+        <div
+          class="flex flex-wrap gap-6 mt-[4vw] font-light text-[0.8rem] lg:text-[1.2rem]"
+        >
           <div
             class="grow-1 flex-wrap-reverse w-full flex justify-between gap-6"
           >
@@ -361,7 +363,7 @@
             </div>
 
             <div class="basis-[300px] grow-1">
-              <p class="font-medium mb-1">Education</p>
+              <p class="font-normal mb-1">Education</p>
               <ul>
                 <li>
                   <a href="#" class="flex items-center"
@@ -385,12 +387,12 @@
             </div>
 
             <div class="basis-[450px] grow-1 max-w-[450px]">
-              <p class="font-medium mb-1">Sign up to our newsletter</p>
+              <p class="font-normal mb-1">Sign up to our newsletter</p>
               <p>
                 Enter your email address to stay up to date with the latest
                 offers, tutorials, downloads, surveys and more.
               </p>
-              <form onsubmit="event.preventDefault()" class="flex w-full mt-4">
+              <form onsubmit="event.preventDefault()" class="flex w-full mt-6">
                 <input
                   class="grow-1 bg-gray-200 px-4"
                   type="email"
@@ -408,7 +410,7 @@
 
           <div class="grow-1 flex-wrap w-full flex gap-6">
             <div class="basis-[300px] grow-1">
-              <p class="font-medium mb-1">Community</p>
+              <p class="font-normal mb-1">Community</p>
               <ul>
                 <li>
                   <a href="#" class="flex items-center"
@@ -432,7 +434,7 @@
             </div>
 
             <div class="basis-[300px] grow-1">
-              <p class="font-medium mb-1">Language and Location</p>
+              <p class="font-normal mb-1">Language and Location</p>
               <div class="flex gap-[2px]">
                 <select
                   value="en"
@@ -466,6 +468,25 @@
             </div>
 
             <div class="basis-[450px] grow-1 max-w-[450px]"></div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row flex-wrap gap-6 sm:items-center justify-between mt-[6vw] font-normal text-[0.8rem] lg:text-[0.875rem]"
+        >
+          <ul class="flex flex-col sm:flex-row flex-wrap gap-3">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Press Resources</a></li>
+            <li><a href="#">Legal Info</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Imprint</a></li>
+          </ul>
+
+          <div class="flex items-center gap-3">
+            <p>Made in Berlin</p>
+            <a href="/"><box-icon size="40px" name="equalizer"></box-icon></a>
           </div>
         </div>
       </footer>
