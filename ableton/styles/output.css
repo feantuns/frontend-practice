@@ -385,6 +385,9 @@
 .pointer-events-none {
   pointer-events: none;
 }
+.relative {
+  position: relative;
+}
 .sticky {
   position: sticky;
 }
@@ -423,6 +426,12 @@
 }
 .mb-1 {
   margin-bottom: calc(var(--spacing) * 1);
+}
+.mb-3 {
+  margin-bottom: calc(var(--spacing) * 3);
+}
+.mb-6 {
+  margin-bottom: calc(var(--spacing) * 6);
 }
 .ml-3 {
   margin-left: calc(var(--spacing) * 3);
@@ -592,6 +601,12 @@
 .gap-\[9vw\] {
   gap: 9vw;
 }
+.gap-y-10 {
+  row-gap: calc(var(--spacing) * 10);
+}
+.gap-y-14 {
+  row-gap: calc(var(--spacing) * 14);
+}
 .rounded-none {
   border-radius: 0;
 }
@@ -670,8 +685,14 @@
 .bg-\[url\(\'\/assets\/img_9\.jpg\'\)\] {
   background-image: url('/assets/img_9.jpg');
 }
+.bg-\[length\:16px\] {
+  background-size: 16px;
+}
 .bg-cover {
   background-size: cover;
+}
+.bg-\[right_10px_center\] {
+  background-position: right 10px center;
 }
 .bg-center {
   background-position: center;
@@ -825,6 +846,99 @@
   -webkit-user-select: none;
   user-select: none;
 }
+.after\:absolute {
+  &::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+}
+.after\:top-\[0\] {
+  &::after {
+    content: var(--tw-content);
+    top: 0;
+  }
+}
+.after\:top-\[50\%\] {
+  &::after {
+    content: var(--tw-content);
+    top: 50%;
+  }
+}
+.after\:right-\[10px\] {
+  &::after {
+    content: var(--tw-content);
+    right: 10px;
+  }
+}
+.after\:block {
+  &::after {
+    content: var(--tw-content);
+    display: block;
+  }
+}
+.after\:h-10 {
+  &::after {
+    content: var(--tw-content);
+    height: calc(var(--spacing) * 10);
+  }
+}
+.after\:h-\[20px\] {
+  &::after {
+    content: var(--tw-content);
+    height: 20px;
+  }
+}
+.after\:w-10 {
+  &::after {
+    content: var(--tw-content);
+    width: calc(var(--spacing) * 10);
+  }
+}
+.after\:w-\[20px\] {
+  &::after {
+    content: var(--tw-content);
+    width: 20px;
+  }
+}
+.after\:transform-\[translateY\(-50\%\)\] {
+  &::after {
+    content: var(--tw-content);
+    transform: translateY(-50%);
+  }
+}
+.after\:transform-\[translateY\(0\)\] {
+  &::after {
+    content: var(--tw-content);
+    transform: translateY(0);
+  }
+}
+.after\:bg-black {
+  &::after {
+    content: var(--tw-content);
+    background-color: var(--color-black);
+  }
+}
+.after\:content-\[\'\'\] {
+  &::after {
+    content: var(--tw-content);
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+}
+.after\:content-\[\'▼\'\] {
+  &::after {
+    content: var(--tw-content);
+    --tw-content: '▼';
+    content: var(--tw-content);
+  }
+}
+.after\:content-\[▼\] {
+  &::after {
+    content: var(--tw-content);
+    --tw-content: ▼;
+    content: var(--tw-content);
+  }
+}
 .sm\:max-w-\[64vw\] {
   @media (width >= 40rem) {
     max-width: 64vw;
@@ -848,6 +962,11 @@
 .lg\:max-w-\[50vw\] {
   @media (width >= 64rem) {
     max-width: 50vw;
+  }
+}
+.lg\:max-w-\[450px\] {
+  @media (width >= 64rem) {
+    max-width: 450px;
   }
 }
 .lg\:text-\[0\.875rem\] {
@@ -1321,4 +1440,34 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 @property --tw-ease {
   syntax: "*";
   inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
 }

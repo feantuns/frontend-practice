@@ -308,7 +308,7 @@
         <h3 class="text-6xl font-medium">Ableton</h3>
 
         <div
-          class="flex flex-wrap gap-6 mt-[4vw] font-light text-[0.8rem] lg:text-[1.2rem]"
+          class="flex flex-wrap gap-y-14 gap-6 mt-[4vw] font-light text-[0.8rem] lg:text-[1.2rem]"
         >
           <div
             class="grow-1 flex-wrap-reverse w-full flex justify-between gap-6"
@@ -386,13 +386,13 @@
               </ul>
             </div>
 
-            <div class="basis-[450px] grow-1 max-w-[450px]">
+            <div class="basis-[450px] grow-1 lg:max-w-[450px]">
               <p class="font-normal mb-1">Sign up to our newsletter</p>
               <p>
                 Enter your email address to stay up to date with the latest
                 offers, tutorials, downloads, surveys and more.
               </p>
-              <form onsubmit="event.preventDefault()" class="flex w-full mt-6">
+              <form onsubmit="event.preventDefault()" class="flex w-full mt-4">
                 <input
                   class="grow-1 bg-gray-200 px-4"
                   type="email"
@@ -434,22 +434,24 @@
             </div>
 
             <div class="basis-[300px] grow-1">
-              <p class="font-normal mb-1">Language and Location</p>
+              <p class="font-normal mb-3">Language and Location</p>
               <div class="flex gap-[2px]">
-                <select
-                  value="en"
-                  class="bg-gray-200 px-3 py-2 text-[0.8rem] rounded-none appearance-none font-medium min-w-[100px]"
-                >
-                  <option value="en">English</option>
-                  <option value="de">Deutsch</option>
-                  <option value="es">Español</option>
-                  <option value="fr">Français</option>
-                  <option value="it">Italiano</option>
-                  <option value="ja">日本語</option>
-                  <option value="ko">한국어</option>
-                  <option value="pt">Português</option>
-                  <option value="zh">简体中文</option>
-                </select>
+                <div class="relative">
+                  <select
+                    value="en"
+                    class="bg-gray-200 px-3 py-2 text-[0.8rem] rounded-none appearance-none font-medium min-w-[100px] relative after:content-['▼'] after:absolute after:right-[10px] after:top-[0] after:transform-[translateY(0)]"
+                  >
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="pt">Português</option>
+                    <option value="zh">简体中文</option>
+                  </select>
+                </div>
                 <select
                   value="us"
                   class="bg-gray-200 px-3 py-2 rounded-none appearance-none text-[0.8rem] font-medium grow-1"
