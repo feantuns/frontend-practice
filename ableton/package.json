@@ -2,6 +2,7 @@
   "name": "ableton",
   "version": "1.0.0",
   "description": "Ableton Frontend Practice Challenge",
+  "homepage": "https://feantuns.github.io/ableton/",
   "main": "index.html",
   "scripts": {
     "tailwind": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
