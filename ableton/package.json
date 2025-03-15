@@ -4,7 +4,7 @@
   "description": "Ableton Frontend Practice Challenge",
   "main": "index.html",
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
+    "tailwind": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
   },
   "author": "Felipe Antunes",
   "license": "ISC",
