@@ -31,7 +31,7 @@
   <body class="bg-gray-100 max-w-[1600px] mx-auto">
     <header class="w-[100%] inline bg-white">
       <div
-        class="flex flex-wrap items-center w-100vw bg-white px-[3vw] py-3 gap-8 border-b-2 border-b-gray-200"
+        class="hidden lg:flex flex-wrap items-center w-100vw bg-white px-[3vw] py-3 gap-8 border-b-2 border-b-gray-200"
       >
         <a href="/"><box-icon size="40px" name="equalizer"></box-icon></a>
         <nav class="flex flex-wrap justify-between grow">
@@ -67,9 +67,24 @@
         </nav>
       </div>
 
+      <div
+        class="flex lg:hidden items-center w-100vw bg-white px-[3vw] py-3 gap-6 border-b-2 border-b-gray-200"
+      >
+        <a href="#"><box-icon size="40px" name="equalizer"></box-icon></a>
+        <a href="#" class="text-[1.2rem] flex items-center gap-2"
+          >Menu
+          <box-icon
+            type="solid"
+            size="8px"
+            class="mt-[-13px]"
+            name="down-arrow"
+          ></box-icon
+        ></a>
+      </div>
+
       <nav
         id="stickyNavbar"
-        class="w-100vw z-1 bg-[rgba(255,255,255,0.8)] px-[3vw] py-5 sticky transition-all duration-500 ease-in-out top-0"
+        class="w-100vw z-1 bg-[rgba(255,255,255,0.8)] px-[3vw] py-5 transition-all duration-500 ease-in-out top-0"
       >
         <ul class="flex gap-6">
           <li><a href="#" class="text-primary">About</a></li>
@@ -85,7 +100,7 @@
           class="flex items-center justify-center h-full w-full bg-[url('./assets/img_0.webp')] bg-center bg-cover bg-no-repeat"
         >
           <h1
-            class="text-9xl font-medium text-primary select-none pointer-events-none"
+            class="text-6xl lg:text-9xl font-medium text-primary select-none pointer-events-none"
           >
             Ableton
           </h1>
@@ -185,15 +200,15 @@
       >
         <div class="flex flex-col gap-[9vw]">
           <div
-            class="w-[30vw] h-[26vw] max-w-[400px] max-h-[300px] bg-[url('./assets/img_3.webp')] bg-right bg-cover bg-no-repeat"
+            class="w-[33vw] h-[29vw] max-w-[500px] max-h-[400px] bg-[url('./assets/img_3.webp')] bg-right bg-cover bg-no-repeat"
           ></div>
 
           <div
-            class="w-[30vw] h-[26vw] max-w-[400px] max-h-[300px] bg-[url('./assets/img_4.webp')] bg-center bg-cover bg-no-repeat"
+            class="w-[33vw] h-[29vw] max-w-[500px] max-h-[400px] bg-[url('./assets/img_4.webp')] bg-center bg-cover bg-no-repeat"
           ></div>
         </div>
         <div
-          class="w-[40vw] h-[50vw] max-w-[600px] max-h-[650px] bg-[url('./assets/img_5.webp')] bg-left bg-cover bg-no-repeat"
+          class="w-[40vw] h-[40vw] max-w-[600px] max-h-[650px] bg-[url('./assets/img_5.webp')] bg-left bg-cover bg-no-repeat"
         ></div>
       </section>
 
@@ -292,7 +307,9 @@
           <div
             class="bg-a-blue grow-1 basis-[300px] p-[9vw] flex items-center justify-center"
           >
-            <p class="text-[1.2rem] lg:text-[1.625rem] font-medium leading-10">
+            <p
+              class="text-[1.2rem] lg:text-[1.625rem] font-normal leading-8 lg:leading-10"
+            >
               We’re really proud of the work we’ve done so far. But there’s so
               much more to come. If you’d like to be a part of it, please join
               us.
@@ -305,7 +322,7 @@
       </section>
 
       <footer class="border-t-2 border-t-gray-200 px-[9vw] py-[8vw]">
-        <h3 class="text-6xl font-medium">Ableton</h3>
+        <h3 class="text-4xl lg:text-6xl font-medium">Ableton</h3>
 
         <div
           class="flex flex-wrap gap-y-14 gap-6 mt-[4vw] font-light text-[0.8rem] lg:text-[1.2rem]"
@@ -504,6 +521,10 @@
       document.documentElement.scrollHeight - window.innerHeight;
 
     window.addEventListener("scroll", () => {
+      if (window.innerWidth < 1024) {
+        navbar.classList.remove("sticky");
+        return;
+      }
       const currentScrollY = window.scrollY;
       const scrollSpeed =
         Math.abs(currentScrollY - lastScrollY) / (Date.now() - lastScrollTime);
