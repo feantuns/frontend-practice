@@ -531,12 +531,14 @@
       const scrollSpeed =
         Math.abs(currentScrollY - lastScrollY) / (Date.now() - lastScrollTime);
 
-      if (currentScrollY < 100) {
+      if (currentScrollY < 120) {
         navbar.classList.remove("sticky");
         navbar.classList.remove("translate-y-[-100%]");
         navbar.classList.remove("translate-y-[0]");
         return;
       }
+
+      console.log(scrollSpeed);
 
       // Show navbar if scrolling up or scrolling very slowly
       if (currentScrollY < lastScrollY && currentScrollY < maxScrollHeight) {
@@ -544,9 +546,8 @@
         navbar.classList.remove("translate-y-[-100%]");
         navbar.classList.add("translate-y-[0]");
       } else {
-        navbar.classList.remove("sticky");
-        navbar.classList.remove("translate-y-[0]");
         navbar.classList.add("translate-y-[-100%]");
+        navbar.classList.remove("translate-y-[0]");
       }
 
       lastScrollY = currentScrollY;
