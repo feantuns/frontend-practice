@@ -385,6 +385,9 @@
 .pointer-events-none {
   pointer-events: none;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
@@ -393,6 +396,15 @@
 }
 .top-0 {
   top: calc(var(--spacing) * 0);
+}
+.top-\[0\] {
+  top: 0;
+}
+.top-\[50\%\] {
+  top: 50%;
+}
+.right-\[10px\] {
+  right: 10px;
 }
 .z-1 {
   z-index: 1;
@@ -610,6 +622,12 @@
   --tw-translate-y: 0;
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
+.transform-\[translateY\(-50\%\)\] {
+  transform: translateY(-50%);
+}
+.transform-\[translateY\(0\)\] {
+  transform: translateY(0);
+}
 .appearance-none {
   appearance: none;
 }
@@ -818,6 +836,18 @@
 .text-sm {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.text-\[\.4rem\] {
+  font-size: .4rem;
+}
+.text-\[\.5rem\] {
+  font-size: .5rem;
+}
+.text-\[\.6rem\] {
+  font-size: .6rem;
+}
+.text-\[\.55rem\] {
+  font-size: .55rem;
 }
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
@@ -1412,6 +1442,31 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
   inherits: false;
   initial-value: 0;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1509,29 +1564,4 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
   syntax: "*";
   initial-value: "";
   inherits: false;
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
 }
