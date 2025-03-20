@@ -159,6 +159,21 @@
         <div
           class="max-w-full sm:max-w-[64vw] lg:max-w-[50vw] mx-auto relative"
         >
+          <div
+            id="video-cover"
+            class="cursor-pointer w-full bg-[url('./assets/poster_juanpe.jpg')] bg-center bg-cover bg-no-repeat h-[50vw] sm:h-[40vw] lg:h-[28vw] flex items-center justify-center"
+          >
+            <div
+              class="w-[100px] h-[100px] rounded-full bg-secondary flex items-center justify-center"
+            >
+              <box-icon
+                name="play"
+                color="white"
+                size="72px"
+                class="mr-[-8px]"
+              ></box-icon>
+            </div>
+          </div>
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/9SbnhgjeyXA?si=Cnzw4-xopLExcyBy&amp;controls=0"
@@ -168,7 +183,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            class="h-[50vw] sm:h-[40vw] lg:h-[30vw]"
+            class="hidden h-[50vw] sm:h-[40vw] lg:h-[30vw]"
           ></iframe>
           <p class="font-medium text-sm mt-3 ml-3">
             Why Ableton - Juanpe Bolivar

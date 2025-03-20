@@ -448,6 +448,12 @@
 .mt-\[6vw\] {
   margin-top: 6vw;
 }
+.mr-\[-8px\] {
+  margin-right: -8px;
+}
+.mr-\[-10px\] {
+  margin-right: -10px;
+}
 .mr-\[-18vw\] {
   margin-right: -18vw;
 }
@@ -496,6 +502,9 @@
 .h-\[29vw\] {
   height: 29vw;
 }
+.h-\[30\%\] {
+  height: 30%;
+}
 .h-\[30vw\] {
   height: 30vw;
 }
@@ -504,6 +513,9 @@
 }
 .h-\[38vw\] {
   height: 38vw;
+}
+.h-\[40\%\] {
+  height: 40%;
 }
 .h-\[40vw\] {
   height: 40vw;
@@ -519,6 +531,9 @@
 }
 .h-\[100\%\] {
   height: 100%;
+}
+.h-\[100px\] {
+  height: 100px;
 }
 .h-full {
   height: 100%;
@@ -547,6 +562,9 @@
 .min-h-\[42vw\] {
   min-height: 42vw;
 }
+.w-\[30\%\] {
+  width: 30%;
+}
 .w-\[30vw\] {
   width: 30vw;
 }
@@ -562,6 +580,9 @@
 .w-\[38vw\] {
   width: 38vw;
 }
+.w-\[40\%\] {
+  width: 40%;
+}
 .w-\[40vw\] {
   width: 40vw;
 }
@@ -570,6 +591,9 @@
 }
 .w-\[100\%\] {
   width: 100%;
+}
+.w-\[100px\] {
+  width: 100px;
 }
 .w-full {
   width: 100%;
@@ -628,6 +652,9 @@
 .transform-\[translateY\(0\)\] {
   transform: translateY(0);
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .appearance-none {
   appearance: none;
 }
@@ -675,6 +702,21 @@
 }
 .gap-y-14 {
   row-gap: calc(var(--spacing) * 14);
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-\[40\%\] {
+  border-radius: 40%;
+}
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+.rounded-\[500px\] {
+  border-radius: 500px;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
 }
 .rounded-none {
   border-radius: 0;
@@ -753,6 +795,9 @@
 }
 .bg-\[url\(\'\.\/assets\/img_9\.jpg\'\)\] {
   background-image: url('./assets/img_9.jpg');
+}
+.bg-\[url\(\'\.\/assets\/poster_juanpe\.jpg\'\)\] {
+  background-image: url('./assets/poster_juanpe.jpg');
 }
 .bg-cover {
   background-size: cover;
@@ -840,14 +885,14 @@
 .text-\[\.4rem\] {
   font-size: .4rem;
 }
+.text-\[\.55rem\] {
+  font-size: .55rem;
+}
 .text-\[\.5rem\] {
   font-size: .5rem;
 }
 .text-\[\.6rem\] {
   font-size: .6rem;
-}
-.text-\[\.55rem\] {
-  font-size: .55rem;
 }
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
@@ -1008,6 +1053,11 @@
 .lg\:hidden {
   @media (width >= 64rem) {
     display: none;
+  }
+}
+.lg\:h-\[28vw\] {
+  @media (width >= 64rem) {
+    height: 28vw;
   }
 }
 .lg\:h-\[30vw\] {
