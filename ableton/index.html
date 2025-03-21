@@ -161,10 +161,10 @@
         >
           <div
             id="video-cover"
-            class="cursor-pointer w-full bg-[url('./assets/poster_juanpe.jpg')] bg-center bg-cover bg-no-repeat h-[50vw] sm:h-[40vw] lg:h-[28vw] flex items-center justify-center"
+            class="cursor-pointer w-full bg-[url('./assets/poster_juanpe.jpg')] bg-center bg-cover bg-no-repeat h-[46vw] sm:h-[36vw] lg:h-[28.1vw] flex items-center justify-center"
           >
             <div
-              class="w-[100px] h-[100px] rounded-full bg-secondary flex items-center justify-center"
+              class="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] rounded-full bg-secondary flex items-center justify-center"
             >
               <box-icon
                 name="play"
@@ -175,15 +175,16 @@
             </div>
           </div>
           <iframe
+            id="video-frame"
             width="100%"
-            src="https://www.youtube.com/embed/9SbnhgjeyXA?si=Cnzw4-xopLExcyBy&amp;controls=0"
+            src="https://www.youtube.com/embed/9SbnhgjeyXA?si=Cnzw4-xopLExcyBy&amp;controls=0&amp;enablejsapi=1"
             title="YouTube video player"
             frameborder="0"
             controls="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            class="hidden h-[50vw] sm:h-[40vw] lg:h-[30vw]"
+            class="hidden h-[46vw] sm:h-[36vw] lg:h-[28.1vw]"
           ></iframe>
           <p class="font-medium text-sm mt-3 ml-3">
             Why Ableton - Juanpe Bolivar
@@ -565,8 +566,6 @@
         return;
       }
 
-      console.log(scrollSpeed);
-
       // Show navbar if scrolling up or scrolling very slowly
       if (currentScrollY < lastScrollY && currentScrollY < maxScrollHeight) {
         navbar.classList.add("sticky");
@@ -579,6 +578,38 @@
 
       lastScrollY = currentScrollY;
       lastScrollTime = Date.now();
+    });
+  </script>
+
+  <script>
+    var player;
+
+    // Load the YouTube Iframe API asynchronously
+    (function () {
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      tag.async = true;
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    })();
+
+    const videoCover = document.getElementById("video-cover");
+    const videoFrame = document.getElementById("video-frame");
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("video-frame");
+    }
+
+    function playVideo() {
+      if (player) {
+        player.playVideo(); // Play the video on button click
+      }
+    }
+
+    videoCover.addEventListener("click", () => {
+      videoCover.classList.add("hidden");
+      videoFrame.classList.remove("hidden");
+      playVideo();
     });
   </script>
 </html>
