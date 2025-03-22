@@ -45,14 +45,25 @@
             <li><a href="#">Packs</a></li>
             <li><a href="#">Help</a></li>
             <li>
-              <a href="#" class="flex items-center gap-1 text-primary"
+              <a
+                href="#"
+                id="more-toggle"
+                class="flex items-center gap-1 text-primary"
                 >More
                 <box-icon
                   name="plus"
                   size="20px"
                   color="var(--color-primary)"
-                ></box-icon
-              ></a>
+                  id="more-toggle-icon"
+                ></box-icon>
+                <box-icon
+                  name="minus"
+                  size="20px"
+                  color="var(--color-primary)"
+                  id="less-toggle-icon"
+                  class="hidden"
+                ></box-icon>
+              </a>
             </li>
           </ul>
 
@@ -610,6 +621,24 @@
       videoCover.classList.add("hidden");
       videoFrame.classList.remove("hidden");
       playVideo();
+    });
+  </script>
+
+  <script>
+    const moreToggle = document.getElementById("more-toggle");
+    const moreToggleIcon = document.getElementById("more-toggle-icon");
+    const lessToggleIcon = document.getElementById("less-toggle-icon");
+
+    moreToggle.addEventListener("click", evt => {
+      console.log("oi");
+      evt.preventDefault();
+      if (moreToggleIcon.classList.contains("hidden")) {
+        moreToggleIcon.classList.remove("hidden");
+        lessToggleIcon.classList.add("hidden");
+      } else {
+        moreToggleIcon.classList.add("hidden");
+        lessToggleIcon.classList.remove("hidden");
+      }
     });
   </script>
 </html>
