@@ -76,6 +76,19 @@
             <li><a href="#">Log in or register</a></li>
           </ul>
         </nav>
+
+        <div id="more-menu-desktop" class="hidden">
+          <h2 class="text-[1.6rem] font-medium mb-4">More on Ableton.com:</h2>
+          <ul class="flex gap-8 text-[1.125rem] font-light">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ableton for the Classroom</a></li>
+            <li><a href="#">Ableton for Colleges and Universitie</a></li>
+            <li><a href="#">Certified Training</a></li>
+            <li><a href="#" class="text-primary">About Ableton</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Apprenticeships</a></li>
+          </ul>
+        </div>
       </div>
 
       <div
@@ -97,7 +110,7 @@
         id="stickyNavbar"
         class="w-100vw z-1 bg-[rgba(255,255,255,0.8)] px-[3vw] py-5 transition-all duration-500 ease-in-out top-0"
       >
-        <ul class="flex gap-6">
+        <ul class="flex gap-8">
           <li><a href="#" class="text-primary">About</a></li>
           <li><a href="#">Jobs</a></li>
           <li><a href="#">Apprenticeships</a></li>
@@ -628,16 +641,18 @@
     const moreToggle = document.getElementById("more-toggle");
     const moreToggleIcon = document.getElementById("more-toggle-icon");
     const lessToggleIcon = document.getElementById("less-toggle-icon");
+    const moreMenuDesktop = document.getElementById("more-menu-desktop");
 
     moreToggle.addEventListener("click", evt => {
-      console.log("oi");
       evt.preventDefault();
       if (moreToggleIcon.classList.contains("hidden")) {
         moreToggleIcon.classList.remove("hidden");
         lessToggleIcon.classList.add("hidden");
+        moreMenuDesktop.classList.add("hidden");
       } else {
         moreToggleIcon.classList.add("hidden");
         lessToggleIcon.classList.remove("hidden");
+        moreMenuDesktop.classList.remove("hidden");
       }
     });
   </script>

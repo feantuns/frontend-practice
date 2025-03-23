@@ -26,3 +26,9 @@
 @import "tailwindcss/theme";
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply text-[#212121];
+  }
+}
