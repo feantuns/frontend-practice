@@ -814,6 +814,9 @@
 .text-\[\.55rem\] {
   font-size: .55rem;
 }
+.text-\[0\.875rem\] {
+  font-size: 0.875rem;
+}
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -825,6 +828,9 @@
 }
 .text-\[1\.125rem\] {
   font-size: 1.125rem;
+}
+.text-\[1rem\] {
+  font-size: 1rem;
 }
 .leading-7 {
   --tw-leading: calc(var(--spacing) * 7);
@@ -981,9 +987,19 @@
     font-size: 1.2rem;
   }
 }
+.lg\:text-\[1\.6rem\] {
+  @media (width >= 64rem) {
+    font-size: 1.6rem;
+  }
+}
 .lg\:text-\[1\.71rem\] {
   @media (width >= 64rem) {
     font-size: 1.71rem;
+  }
+}
+.lg\:text-\[1\.125rem\] {
+  @media (width >= 64rem) {
+    font-size: 1.125rem;
   }
 }
 .lg\:text-\[1\.625rem\] {
@@ -1014,6 +1030,27 @@
     --tw-backdrop-blur: blur(3px);
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+}
+.xl\:text-lg {
+  @media (width >= 80rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+}
+.xl\:text-\[1\.6rem\] {
+  @media (width >= 80rem) {
+    font-size: 1.6rem;
+  }
+}
+.xl\:text-\[1\.125rem\] {
+  @media (width >= 80rem) {
+    font-size: 1.125rem;
+  }
+}
+.xl\:text-\[1rem\] {
+  @media (width >= 80rem) {
+    font-size: 1rem;
   }
 }
 @layer theme, base, components, utilities;
