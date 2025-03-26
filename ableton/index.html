@@ -87,7 +87,7 @@
           <h2 class="text-[1.2rem] xl:text-[1.6rem] font-medium mb-4">
             More on Ableton.com:
           </h2>
-          <ul class="flex gap-8 text-[0.875rem] xl:text-[1.125rem] font-light">
+          <ul class="flex gap-8 text-[0.875rem] xl:text-[1.2rem] font-light">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Ableton for the Classroom</a></li>
             <li><a href="#">Ableton for Colleges and Universitie</a></li>
@@ -143,10 +143,20 @@
       </div>
 
       <div
+        id="menu-mobile"
+        class="z-0 h-[100vh] translate-y-[-100%] absolute top-0 right-0 w-[100vw] transition-all duration-500 ease-out bg-secondary"
+      ></div>
+
+      <div
         class="flex lg:hidden items-center w-100vw bg-white px-[3vw] py-3 gap-6 border-b-2 border-b-gray-200"
       >
-        <a href="#"><box-icon size="40px" name="equalizer"></box-icon></a>
-        <a href="#" class="text-[1.2rem] flex items-center gap-2"
+        <a href="#" class="z-1 relative"
+          ><box-icon size="40px" name="equalizer" color="inherit"></box-icon
+        ></a>
+        <a
+          id="menu-mobile-toggle"
+          href="#"
+          class="text-[1.2rem] flex items-center gap-2 z-1 relative text-inherit"
           >Menu
           <box-icon
             type="solid"
@@ -693,6 +703,8 @@
     const moreToggleIcon = document.getElementById("more-toggle-icon");
     const lessToggleIcon = document.getElementById("less-toggle-icon");
     const moreMenuDesktop = document.getElementById("more-menu-desktop");
+    const menuMobileToggle = document.getElementById("menu-mobile-toggle");
+    const menuMobile = document.getElementById("menu-mobile");
 
     moreToggle.addEventListener("click", evt => {
       evt.preventDefault();
@@ -704,6 +716,21 @@
         moreToggleIcon.classList.add("hidden");
         lessToggleIcon.classList.remove("hidden");
         moreMenuDesktop.classList.remove("hidden");
+      }
+    });
+
+    menuMobileToggle.addEventListener("click", evt => {
+      evt.preventDefault();
+      if (menuMobile.classList.contains("translate-y-[-100%]")) {
+        // menuMobile.classList.remove("hidden");
+        menuMobile.classList.remove("translate-y-[-100%]");
+        menuMobile.classList.add("translate-y-[0]");
+        menuMobileToggle.classList.add("text-white");
+      } else {
+        // menuMobile.classList.add("hidden");
+        menuMobile.classList.remove("translate-y-[0]");
+        menuMobile.classList.add("translate-y-[-100%]");
+        menuMobileToggle.classList.remove("text-white");
       }
     });
   </script>
