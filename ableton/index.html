@@ -710,6 +710,7 @@
     const lessToggleIcon = document.getElementById("less-toggle-icon");
     const moreMenuDesktop = document.getElementById("more-menu-desktop");
     const menuMobileToggle = document.getElementById("menu-mobile-toggle");
+    const menuMobileToggleIcon = menuMobileToggle.querySelector("box-icon");
     const menuMobile = document.getElementById("menu-mobile");
     const containerMenuMobileToggle = document.getElementById(
       "container-menu-mobile-toggle"
@@ -737,12 +738,18 @@
         menuMobile.classList.add("translate-y-[0]");
         containerMenuMobileToggle.classList.add("text-white");
         containerIcons.forEach(el => el.setAttribute("color", "white"));
+        menuMobileToggleIcon.classList.add("rotate-180");
+        menuMobileToggleIcon.classList.remove("mt-[-13px]");
+        menuMobileToggleIcon.classList.add("mb-[-21px]");
       } else {
         // menuMobile.classList.add("hidden");
         menuMobile.classList.remove("translate-y-[0]");
         menuMobile.classList.add("translate-y-[-100%]");
         containerMenuMobileToggle.classList.remove("text-white");
         containerIcons.forEach(el => el.setAttribute("color", "inherit"));
+        menuMobileToggleIcon.classList.remove("rotate-180");
+        menuMobileToggleIcon.classList.add("mt-[-13px]");
+        menuMobileToggleIcon.classList.remove("mb-[-21px]");
       }
     });
   </script>

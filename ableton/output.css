@@ -427,6 +427,9 @@
 .mt-\[-13px\] {
   margin-top: -13px;
 }
+.mt-\[-23px\] {
+  margin-top: -23px;
+}
 .mt-\[2vw\] {
   margin-top: 2vw;
 }
@@ -453,6 +456,21 @@
 }
 .mb-16 {
   margin-bottom: calc(var(--spacing) * 16);
+}
+.mb-\[-13px\] {
+  margin-bottom: -13px;
+}
+.mb-\[-15px\] {
+  margin-bottom: -15px;
+}
+.mb-\[-18px\] {
+  margin-bottom: -18px;
+}
+.mb-\[-20px\] {
+  margin-bottom: -20px;
+}
+.mb-\[-21px\] {
+  margin-bottom: -21px;
 }
 .ml-3 {
   margin-left: calc(var(--spacing) * 3);
@@ -617,6 +635,9 @@
 .translate-y-\[0\] {
   --tw-translate-y: 0;
   translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.rotate-180 {
+  rotate: 180deg;
 }
 .transform-\[translateY\(-50\%\)\] {
   transform: translateY(-50%);
