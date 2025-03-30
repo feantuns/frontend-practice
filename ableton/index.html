@@ -173,7 +173,7 @@
             </ul>
           </nav>
 
-          <div class="pb-12 w-full">
+          <div class="pb-3 w-full">
             <h2 class="text-[1.2rem] xl:text-[1.6rem] font-medium mb-4">
               More on Ableton.com:
             </h2>
@@ -820,25 +820,44 @@
       }
     });
 
+    const openMenuMobile = () => {
+      menuMobile.classList.remove("translate-y-[-100%]");
+      menuMobile.classList.add("translate-y-[0]");
+      containerMenuMobileToggle.classList.add("text-white");
+      containerIcons.forEach(el => el.setAttribute("color", "white"));
+      menuMobileToggleIcon.classList.add("rotate-180");
+      menuMobileToggleIcon.classList.remove("mt-[-13px]");
+      menuMobileToggleIcon.classList.add("mb-[-21px]");
+    };
+
+    const closeMenuMobile = () => {
+      menuMobile.classList.remove("translate-y-[0]");
+      menuMobile.classList.add("translate-y-[-100%]");
+      containerMenuMobileToggle.classList.remove("text-white");
+      containerIcons.forEach(el => el.setAttribute("color", "inherit"));
+      menuMobileToggleIcon.classList.remove("rotate-180");
+      menuMobileToggleIcon.classList.add("mt-[-13px]");
+      menuMobileToggleIcon.classList.remove("mb-[-21px]");
+    };
+
+    const stopPropagation = evt => evt.stopPropagation();
+
     menuMobileToggle.addEventListener("click", evt => {
       evt.preventDefault();
+      evt.stopPropagation();
       if (menuMobile.classList.contains("translate-y-[-100%]")) {
-        menuMobile.classList.remove("translate-y-[-100%]");
-        menuMobile.classList.add("translate-y-[0]");
-        containerMenuMobileToggle.classList.add("text-white");
-        containerIcons.forEach(el => el.setAttribute("color", "white"));
-        menuMobileToggleIcon.classList.add("rotate-180");
-        menuMobileToggleIcon.classList.remove("mt-[-13px]");
-        menuMobileToggleIcon.classList.add("mb-[-21px]");
+        openMenuMobile();
       } else {
-        // menuMobile.classList.add("hidden");
-        menuMobile.classList.remove("translate-y-[0]");
-        menuMobile.classList.add("translate-y-[-100%]");
-        containerMenuMobileToggle.classList.remove("text-white");
-        containerIcons.forEach(el => el.setAttribute("color", "inherit"));
-        menuMobileToggleIcon.classList.remove("rotate-180");
-        menuMobileToggleIcon.classList.add("mt-[-13px]");
-        menuMobileToggleIcon.classList.remove("mb-[-21px]");
+        closeMenuMobile();
+      }
+    });
+
+    menuMobile.addEventListener("click", stopPropagation);
+    containerMenuMobileToggle.addEventListener("click", stopPropagation);
+
+    window.addEventListener("click", () => {
+      if (!menuMobile.classList.contains("translate-y-[-100%]")) {
+        closeMenuMobile();
       }
     });
   </script>
