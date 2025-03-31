@@ -795,14 +795,23 @@
 .bg-\[url\(\'\.\/assets\/img_7\.jpg\'\)\] {
   background-image: url('./assets/img_7.jpg');
 }
+.bg-\[url\(\'\.\/assets\/img_7\.webp\'\)\] {
+  background-image: url('./assets/img_7.webp');
+}
 .bg-\[url\(\'\.\/assets\/img_8\.webp\'\)\] {
   background-image: url('./assets/img_8.webp');
 }
 .bg-\[url\(\'\.\/assets\/img_9\.jpg\'\)\] {
   background-image: url('./assets/img_9.jpg');
 }
+.bg-\[url\(\'\.\/assets\/img_9\.webp\'\)\] {
+  background-image: url('./assets/img_9.webp');
+}
 .bg-\[url\(\'\.\/assets\/poster_juanpe\.jpg\'\)\] {
   background-image: url('./assets/poster_juanpe.jpg');
+}
+.bg-\[url\(\'\.\/assets\/poster_juanpe\.webp\'\)\] {
+  background-image: url('./assets/poster_juanpe.webp');
 }
 .bg-cover {
   background-size: cover;
