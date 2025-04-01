@@ -34,13 +34,25 @@ Requisitos:
   - [x] Fontes
   - [x] Cores do tema
   - [x] Background
-- [ ] Desenvolver
+- [x] Desenvolver
   - [x] Menu superior
-  - [ ] Menu inferior
-  - [ ] Menu more
-  - [ ] Menu responsivo
+  - [x] Menu inferior
+  - [x] Menu more
+  - [x] Menu responsivo
   - [x] Hero
   - [x] Body sections
-  - [ ] Footer
+  - [x] Footer
   - [x] select highlight texto fundo azul
-  - [ ] Converter imagens para webp
+  - [x] Converter imagens para webp
+
+## Lições aprendidas
+
+React é muito melhor que usar só html e js, a abordagem declarativa do React reduz muito a complexidade e a repetição de código. Com js puro precisamos ficar pegando cada elemento em específico e adicionando removendo classes / styles para aplicar interações.
+
+Tailwind também é complexo de configurar sem um vite da vida.
+
+A estratégia de usar a unidade vw para tornar imagens e textos responsivos sem o uso de media-queries foi muito interessante.
+
+Para os próximos: lembrar que é melhor nomes de imagens declarativos do que nomes sequenciais que não dizem do que a imagem se trata.
+
+Box-icons com web components, não achei legal. Bem limitado. Era melhor o famoso font awesome com seus ícones roots.
