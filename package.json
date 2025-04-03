@@ -1,0 +1,9 @@
+{
+  "name": "frontend-practice",
+  "version": "1.0.0",
+  "description": "Frontend Practice Challenges",
+  "homepage": "https://feantuns.github.io/frontend-practice/",
+  "main": "index.html",
+  "author": "Felipe Antunes",
+  "license": "ISC"
+}
