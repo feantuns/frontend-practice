@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Practice Projects</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .animated-gradient {
+        background: linear-gradient(-45deg, #4f46e5, #06b6d4, #10b981, #f59e0b);
+        background-size: 400% 400%;
+        animation: gradientMove 15s ease infinite;
+      }
+    </style>
   </head>
-  <body>
-    <a href="https://feantuns.github.io/ableton/">Ableton</a>
+  <body
+    class="animated-gradient h-full text-white flex flex-col items-center justify-center p-6"
+  >
+    <header class="mb-10 text-center">
+      <h1 class="text-4xl font-bold tracking-tight drop-shadow-lg">
+        Frontend Practice Projects
+      </h1>
+      <p class="text-lg text-white/80 mt-2">
+        A collection of websites recreated for learning and fun
+      </p>
+    </header>
+
+    <main class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl w-full">
+      <!-- Ableton -->
+      <a
+        href="https://feantuns.github.io/ableton/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group block rounded-xl backdrop-blur-lg bg-white/10 hover:bg-white/20 transition p-6 shadow-xl focus:outline-none focus:ring-4 focus:ring-white/40"
+      >
+        <h2
+          class="text-2xl font-semibold group-hover:scale-105 transition-transform"
+        >
+          Ableton
+        </h2>
+        <p class="text-sm text-white/70 mt-2">
+          A recreation of the Ableton website
+        </p>
+      </a>
+
+      <!-- Monstercat -->
+      <a
+        href="https://feantuns.github.io/monstercat/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group block rounded-xl backdrop-blur-lg bg-white/10 hover:bg-white/20 transition p-6 shadow-xl focus:outline-none focus:ring-4 focus:ring-white/40"
+      >
+        <h2
+          class="text-2xl font-semibold group-hover:scale-105 transition-transform"
+        >
+          Monstercat
+        </h2>
+        <p class="text-sm text-white/70 mt-2">
+          A recreation of the Monstercat website
+        </p>
+      </a>
+    </main>
+
+    <footer class="mt-12 text-sm text-white/70">
+      © <span id="year"></span> Felipe Antunes. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
